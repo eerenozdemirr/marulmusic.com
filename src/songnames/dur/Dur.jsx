@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Dur.css';
-import yeniGorsel from './yeni-gorsel.png';
+import yeniGorsel from './yeni-gorsel.webp';
 import alternatifGorsel from './sonfoto.PNG';
 import arkaPlanSes from './arka-plan-ses.mp3';
 import spotifyLogo from '../../assets/images/common/spotify-logo.png';

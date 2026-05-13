@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import './Kac.css';
-import dinoImage from './sena.png';
-import leftImage from './alp.png';
+import dinoImage from './sena.webp';
+import leftImage from './alp.webp';
 import obstacleImage from './engel.png';
 import startSoundFile from './game-music1.mp3';
 import startButtonImage from './play.png';

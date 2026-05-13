@@ -1,7 +1,7 @@
 /* Kacma.css */
 
 .kacma-page {
-    background-image: url('kacma-background.PNG'); /* Arka plan resmi için doğru yolu kullanın */
+    background-image: url('kacma-background.webp'); /* Arka plan resmi için doğru yolu kullanın */
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 

@@ -4,8 +4,8 @@ import arkaPlanSes from './arka-plan-ses.mp3'; // Ses dosyasını içe aktar
 import spotifyLogo from '../../assets/images/common/spotify-logo.png';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
-import background1 from './background1.PNG'; // İlk arka plan
-import background2 from './background2.PNG'; // İkinci arka plan
+import background1 from './background1.webp'; // İlk arka plan
+import background2 from './background2.webp'; // İkinci arka plan
 import button1Image from './button1.PNG'; // Birinci PNG buton
 import button2Image from './button2.PNG'; // İkinci PNG buton
 import { playAudioElement, stopAudio } from '../../lib/audio';

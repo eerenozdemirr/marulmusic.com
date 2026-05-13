@@ -1,5 +1,5 @@
 .dur-page {
-    background-image: url('dur-background.PNG'); /* Arka plan resmi için doğru yolu kullanın */
+    background-image: url('dur-background.webp'); /* Arka plan resmi için doğru yolu kullanın */
     background-size: cover; /* Arka planı kaplayacak şekilde ayarlama */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engelle */
     background-position: center; /* Arka planı merkezde konumlandır */

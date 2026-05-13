@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './BirKadinVarmis.css'; // Stil dosyasını içe aktar
-import oldBackground from './old-background.PNG'; // Eski arka plan
-import newBackground from './new-background.png'; // Yeni arka plan
-import clickableImage from './kadın.png'; // Tıklanabilir PNG
+import oldBackground from './old-background.webp'; // Eski arka plan
+import newBackground from './new-background.webp'; // Yeni arka plan
+import clickableImage from './kadın.webp'; // Tıklanabilir PNG
 import backgroundMusic from './birkadinvarmis.mp3'; // Arka plan müziği
 import newSound from './caz.mp3'; // Yeni ses
-import buttonImage from './caz.PNG'; // PNG buton
+import buttonImage from './caz.webp'; // PNG buton
 
 import spotifyLogo from '../../assets/images/common/spotify-logo.png';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';

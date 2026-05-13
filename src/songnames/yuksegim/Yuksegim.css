@@ -1,5 +1,5 @@
 .yuksegim-page {
-    background-image: url('../../assets/images/yuksegim/yuksegim-background.PNG');
+    background-image: url('../../assets/images/yuksegim/yuksegim-background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,7 +71,7 @@
     animation: fade 1s linear infinite; 
 }
 
-/* Fotoğrafın ayarları - İkinci bölge için sena.PNG */
+/* Fotoğrafın ayarları - İkinci bölge için sena.webp */
 .photo-in-region-sena {
     position: absolute;
     top: 35%; 

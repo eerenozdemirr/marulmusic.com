@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './OlsunOlmasin.css'; // Stil dosyasını içe aktar
 import elYazisi from './el-yazisi.PNG'; // El yazısı resmini içe aktar
-import birinciGorsel from './birinci-gorsel.png'; // Birinci görsel
-import ikinciGorsel from './ikinci-gorsel.png'; // İkinci görsel
+import birinciGorsel from './birinci-gorsel.webp'; // Birinci görsel
+import ikinciGorsel from './ikinci-gorsel.webp'; // İkinci görsel
 import birinciSes from './birinci-ses.mp3'; // Birinci ses
 import ikinciSes from './ikinci-ses.mp3'; // İkinci ses
 import video from './video.mp4'; // Video dosyası

@@ -6,7 +6,7 @@ import sound2 from '../../assets/sounds/sound2.mp3';
 import sound3 from '../../assets/sounds/sound3.mp3';
 import sound4 from '../../assets/sounds/sound4.mp3';
 import alpImage from '../../assets/images/yuksegim/alp.PNG';
-import senaImage from '../../assets/images/yuksegim/sena.PNG';
+import senaImage from '../../assets/images/yuksegim/sena.webp';
 import emreImage from '../../assets/images/yuksegim/emre.PNG';
 import erenImage from '../../assets/images/yuksegim/eren.PNG';
 import videoFile from '../../assets/videos/video.mp4';

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 import background from './assets/images/home/background.jpg';
 import chairImage from './assets/images/home/chair1.PNG';
-import creditImage from './assets/images/home/credit.png';
+import creditImage from './assets/images/home/credit.webp';
 import leftButtonImage from './assets/images/home/left.PNG';
 import rightButtonImage from './assets/images/home/right.PNG';
 
