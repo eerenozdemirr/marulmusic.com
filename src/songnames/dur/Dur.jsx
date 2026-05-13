@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Dur.css';
 import yeniGorsel from './yeni-gorsel.webp';
-import alternatifGorsel from './sonfoto.PNG';
+import alternatifGorsel from './sonfoto.webp';
 import arkaPlanSes from './arka-plan-ses.mp3';
-import spotifyLogo from '../../assets/images/common/spotify-logo.png';
+import spotifyLogo from '../../assets/images/common/spotify-logo.webp';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
 import { playAudioElement, stopAudio } from '../../lib/audio';

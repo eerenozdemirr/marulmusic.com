@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './TutmazEllerim.css';
 import video from './video.mp4';
 import sound from './benkimim.mp3'; // Ses dosyanızı buraya ekleyin
-import spotifyLogo from '../../assets/images/common/spotify-logo.png';
+import spotifyLogo from '../../assets/images/common/spotify-logo.webp';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
 import { playAudioElement, stopAudio } from '../../lib/audio';

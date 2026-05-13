@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
-import background from './assets/images/home/background.jpg';
-import chairImage from './assets/images/home/chair1.PNG';
+import background from './assets/images/home/background.webp';
+import chairImage from './assets/images/home/chair1.webp';
 import creditImage from './assets/images/home/credit.webp';
 import leftButtonImage from './assets/images/home/left.PNG';
 import rightButtonImage from './assets/images/home/right.PNG';

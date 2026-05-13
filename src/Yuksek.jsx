@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import backgroundSound from './assets/sounds/background-sound.mp3'; // Ses dosyasını içe aktar
 import { playAudioElement, stopAudio } from './lib/audio';
-import newBackground from './assets/images/yuksek/new-background.jpg';
+import newBackground from './assets/images/yuksek/new-background.webp';
 
-import song1 from './assets/images/yuksek/song1.png';
-import song2 from './assets/images/yuksek/song2.png';
-import song3 from './assets/images/yuksek/song3.png';
-import song4 from './assets/images/yuksek/song4.png';
-import song5 from './assets/images/yuksek/song5.png';
-import song6 from './assets/images/yuksek/song6.png';
-import song7 from './assets/images/yuksek/song7.png';
-import song8 from './assets/images/yuksek/song8.png';
+import song1 from './assets/images/yuksek/song1.webp';
+import song2 from './assets/images/yuksek/song2.webp';
+import song3 from './assets/images/yuksek/song3.webp';
+import song4 from './assets/images/yuksek/song4.webp';
+import song5 from './assets/images/yuksek/song5.webp';
+import song6 from './assets/images/yuksek/song6.webp';
+import song7 from './assets/images/yuksek/song7.webp';
+import song8 from './assets/images/yuksek/song8.webp';
 
 
 const Yuksek = () => {

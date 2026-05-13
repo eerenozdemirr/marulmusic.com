@@ -7,7 +7,7 @@ import backgroundMusic from './birkadinvarmis.mp3'; // Arka plan müziği
 import newSound from './caz.mp3'; // Yeni ses
 import buttonImage from './caz.webp'; // PNG buton
 
-import spotifyLogo from '../../assets/images/common/spotify-logo.png';
+import spotifyLogo from '../../assets/images/common/spotify-logo.webp';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
 import { playAudioElement, stopAudio } from '../../lib/audio';

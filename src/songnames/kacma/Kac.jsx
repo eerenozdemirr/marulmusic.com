@@ -3,11 +3,11 @@ import { useLocation } from 'react-router-dom';
 import './Kac.css';
 import dinoImage from './sena.webp';
 import leftImage from './alp.webp';
-import obstacleImage from './engel.png';
+import obstacleImage from './engel.webp';
 import startSoundFile from './game-music1.mp3';
-import startButtonImage from './play.png';
-import restartButtonImage from './play.png';
-import gameOverImage from './lose.png';
+import startButtonImage from './play.webp';
+import restartButtonImage from './play.webp';
+import gameOverImage from './lose.webp';
 import { playAudioElement, stopAudio } from '../../lib/audio';
 
 const Kac = () => {

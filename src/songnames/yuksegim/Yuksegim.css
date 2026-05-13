@@ -61,7 +61,7 @@
     background-color: rgba(255, 255, 0, 0); 
 }
 
-/* Fotoğrafın ayarları - Birinci bölge için alp.PNG */
+/* Fotoğrafın ayarları - Birinci bölge için alp.webp */
 .photo-in-region-alp {
     position: absolute;
     top: 32%; 
@@ -81,7 +81,7 @@
     animation: fade 1250ms linear infinite; 
 }
 
-/* Fotoğrafın ayarları - Üçüncü bölge için emre.PNG */
+/* Fotoğrafın ayarları - Üçüncü bölge için emre.webp */
 .photo-in-region-emre {
     position: absolute;
     top: 32%; 
@@ -91,7 +91,7 @@
     animation: fade 1s linear infinite; 
 }
 
-/* Fotoğrafın ayarları - Dördüncü bölge için eren.PNG */
+/* Fotoğrafın ayarları - Dördüncü bölge için eren.webp */
 .photo-in-region-eren {
     position: absolute;
     top: 40%; 

@@ -5,13 +5,13 @@ import sound from '../../assets/sounds/sound.mp3';
 import sound2 from '../../assets/sounds/sound2.mp3';
 import sound3 from '../../assets/sounds/sound3.mp3';
 import sound4 from '../../assets/sounds/sound4.mp3';
-import alpImage from '../../assets/images/yuksegim/alp.PNG';
+import alpImage from '../../assets/images/yuksegim/alp.webp';
 import senaImage from '../../assets/images/yuksegim/sena.webp';
-import emreImage from '../../assets/images/yuksegim/emre.PNG';
-import erenImage from '../../assets/images/yuksegim/eren.PNG';
+import emreImage from '../../assets/images/yuksegim/emre.webp';
+import erenImage from '../../assets/images/yuksegim/eren.webp';
 import videoFile from '../../assets/videos/video.mp4';
 
-import spotifyLogo from '../../assets/images/common/spotify-logo.png';
+import spotifyLogo from '../../assets/images/common/spotify-logo.webp';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
 import { playAudioFile } from '../../lib/audio';

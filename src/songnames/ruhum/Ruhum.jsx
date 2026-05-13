@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './Ruhum.css';
-import button1 from './button1.PNG';
-import button2 from './button2.PNG';
-import button3 from './button3.PNG';
-import button4 from './button4.PNG';
-import button5 from './button5.PNG';
-import button6 from './button6.PNG';
-import button7 from './button7.PNG';
-import button8 from './button8.PNG';
-import button9 from './button9.PNG';
+import button1 from './button1.webp';
+import button2 from './button2.webp';
+import button3 from './button3.webp';
+import button4 from './button4.webp';
+import button5 from './button5.webp';
+import button6 from './button6.webp';
+import button7 from './button7.webp';
+import button8 from './button8.webp';
+import button9 from './button9.webp';
 import videoFile from './video.mp4';
 
 // Ses dosyalarını import et
@@ -23,7 +23,7 @@ import sound8 from './sound8.mp3';
 import sound9 from './sound9.mp3';
 
 // Müzik platformu logolarını import et
-import spotifyLogo from '../../assets/images/common/spotify-logo.png';
+import spotifyLogo from '../../assets/images/common/spotify-logo.webp';
 import youtubeLogo from '../../assets/images/common/youtube-logo.png';
 import appleMusicLogo from '../../assets/images/common/apple-music-logo.png';
 import { playAudioFile } from '../../lib/audio';
