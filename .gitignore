@@ -10,10 +10,13 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
+tum_notlar.md
 .env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local

@@ -1,10 +1,10 @@
 .yuksegim-page {
-    background-image: url('yuksegim-background.PNG');
+    background-image: url('../../assets/images/yuksegim/yuksegim-background.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
     margin-top: -30px;
     animation: fadeIn 1s ease-in-out; /* Fade in animasyonu */
@@ -27,45 +27,45 @@
 
 /* Birinci bölge */
 .first-region {
-    top: 39.7vh; 
-    left: 10.5vw; 
-    width: 18.6vw; 
-    height: 8.6vh; 
+    top: 39.7%; 
+    left: 10.5%; 
+    width: 18.6%; 
+    height: 8.6%; 
     background-color: rgba(255, 0, 0, 0); 
 }
 
 /* İkinci bölge */
 .second-region {
-    top: 42.9vh; 
-    left: 40.7vw; 
-    width: 16.3vw; 
-    height: 8.6vh; 
+    top: 42.9%; 
+    left: 40.7%; 
+    width: 16.3%; 
+    height: 8.6%; 
     background-color: rgba(0, 255, 0, 0); 
 }
 
 /* Üçüncü bölge */
 .third-region {
-    top: 42.9vh; 
-    left: 62.8vw; 
-    width: 20.9vw; 
-    height: 12.9vh; 
+    top: 42.9%; 
+    left: 62.8%; 
+    width: 20.9%; 
+    height: 12.9%; 
     background-color: rgba(0, 0, 255, 0); 
 }
 
 /* Dördüncü bölge */
 .fourth-region {
-    top: 53.6vh; 
-    left: 34.8vw; 
-    width: 22.1vw; 
-    height: 10.8vh; 
+    top: 53.6%; 
+    left: 34.8%; 
+    width: 22.1%; 
+    height: 10.8%; 
     background-color: rgba(255, 255, 0, 0); 
 }
 
 /* Fotoğrafın ayarları - Birinci bölge için alp.PNG */
 .photo-in-region-alp {
     position: absolute;
-    top: 32vh; 
-    left: 5vw; 
+    top: 32%; 
+    left: 5%; 
     width: 120px; 
     height: auto; 
     animation: fade 1s linear infinite; 
@@ -74,8 +74,8 @@
 /* Fotoğrafın ayarları - İkinci bölge için sena.PNG */
 .photo-in-region-sena {
     position: absolute;
-    top: 35vh; 
-    left: 35vw; 
+    top: 35%; 
+    left: 35%; 
     width: 120px; 
     height: auto; 
     animation: fade 1250ms linear infinite; 
@@ -84,8 +84,8 @@
 /* Fotoğrafın ayarları - Üçüncü bölge için emre.PNG */
 .photo-in-region-emre {
     position: absolute;
-    top: 32vh; 
-    left: 55vw; 
+    top: 32%; 
+    left: 55%; 
     width: 160px; 
     height: auto; 
     animation: fade 1s linear infinite; 
@@ -94,8 +94,8 @@
 /* Fotoğrafın ayarları - Dördüncü bölge için eren.PNG */
 .photo-in-region-eren {
     position: absolute;
-    top: 40vh; 
-    left: 22vw; 
+    top: 40%; 
+    left: 22%; 
     width: 180px; 
     height: auto; 
     animation: fade 1.4s linear infinite; 
@@ -107,11 +107,28 @@
     margin-top: 10px; /* Üstten biraz boşluk ekleyebilirsiniz */
 }
 
+.yuksegim-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.82);
+}
+
+.yuksegim-video-overlay .video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+}
+
 .loading-spinner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Tam ekran */
+    height: 100%; /* Tam ekran */
     font-size: 24px; /* Yükleme yazısı boyutu */
     font-weight: bold;
     color: #333;
@@ -171,7 +188,7 @@
 
 
 .notepad-container {
-    position: fixed;
+    position: absolute;
     top: 40%;
     left: 48%;
     transform: translate(-50%, -50%);
@@ -255,7 +272,7 @@
 
 
 .password-prompt {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

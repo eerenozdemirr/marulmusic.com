@@ -2,8 +2,8 @@
     background-size: cover; /* Arka planı kaplayacak şekilde ayarlama */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engelle */
     background-position: center; /* Arka planı merkezde konumlandır */
-    height: 100vh; /* Tam ekran yüksekliği */
-    width: 100vw; /* Tam ekran genişliği */
+    height: 100%; /* Tam ekran yüksekliği */
+    width: 100%; /* Tam ekran genişliği */
     opacity: 0; /* Başlangıçta görünmez */
     transition: opacity 1s ease; /* Opaklık geçişi için animasyon */
     background-size: 110%;
@@ -34,7 +34,7 @@
 }
 
 .birkadinvarmis-music-links {
-    position: fixed;  /* Sayfanın altına sabitle */
+    position: absolute;  /* Sayfanın altına sabitle */
     bottom: 0;  /* Ekranın altına yapıştır */
     width: 100%;  /* Tüm genişliği kaplasın */
     display: flex;

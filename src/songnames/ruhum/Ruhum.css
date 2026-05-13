@@ -1,124 +1,172 @@
 .ruhum-page {
-    background-image: url('/Users/erenozdemir/album-promotion/src/songnames/ruhum/background.PNG');
+    background-image: url('./background.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Dikey olarak hizalama */
-    justify-content: flex-start; /* Üstten hizalama */
-    align-items: center; /* Yatayda merkezleme */
-    padding-top: 5%; /* Üstten biraz boşluk ekle */
-    position: relative; /* Mutlak pozisyon için gerekli */
-    overflow: hidden; /* Kaydırmayı kaldır */
+    flex-direction: column;
+    /* Dikey olarak hizalama */
+    justify-content: flex-start;
+    /* Üstten hizalama */
+    align-items: center;
+    /* Yatayda merkezleme */
+    padding-top: 5%;
+    /* Üstten biraz boşluk ekle */
+    position: relative;
+    /* Mutlak pozisyon için gerekli */
+    overflow: hidden;
+    /* Kaydırmayı kaldır */
 }
 
 /* Renkli bloklar için stil */
 .color-block {
-    position: absolute; /* Mutlak pozisyon */
-    opacity: 1; /* Opaklık */
-    bottom: 5%; /* Sayfanın altından %5 yukarıda */
-    left: 50%; /* Genişliği merkezde hizala */
-    transform: translate(-50%, 0); /* Yalnızca yatayda merkezde olmasını sağla */
+    position: absolute;
+    /* Mutlak pozisyon */
+    opacity: 1;
+    /* Opaklık */
+    bottom: 5%;
+    /* Sayfanın altından %5 yukarıda */
+    left: 50%;
+    /* Genişliği merkezde hizala */
+    transform: translate(-50%, 0);
+    /* Yalnızca yatayda merkezde olmasını sağla */
 }
 
 /* Her kare için spesifik ayarlar */
 .block1 {
-    background-color: rgba(0, 0, 255, 0); /* Mavi */
-    width: 30%;  /* Kare genişliği */
-    height: 10%; /* Kare yüksekliği */
+    background-color: rgba(0, 0, 255, 0);
+    /* Mavi */
+    width: 30%;
+    /* Kare genişliği */
+    height: 10%;
+    /* Kare yüksekliği */
     left: 10%;
     top: 45%;
 }
 
 .block2 {
-    background-color: rgba(0, 128, 0, 0); /* Yeşil */
-    width: 26%;  /* Kare genişliği */
-    height: 10%; /* Kare yüksekliği */
+    background-color: rgba(0, 128, 0, 0);
+    /* Yeşil */
+    width: 26%;
+    /* Kare genişliği */
+    height: 10%;
+    /* Kare yüksekliği */
     left: 42%;
     top: 45%;
 }
 
 .block3 {
-    background-color: rgba(0, 0, 0, 0); /* Siyah */
-    width: 20%;  /* Kare genişliği */
-    height: 10%; /* Kare yüksekliği */
+    background-color: rgba(0, 0, 0, 0);
+    /* Siyah */
+    width: 20%;
+    /* Kare genişliği */
+    height: 10%;
+    /* Kare yüksekliği */
     left: 70%;
     top: 45%;
 }
 
 .block4 {
-    background-color: rgba(255, 165, 0, 0); /* Turuncu */
-    width: 15%;  /* Kare genişliği */
-    height: 10%; /* Kare yüksekliği */
+    background-color: rgba(255, 165, 0, 0);
+    /* Turuncu */
+    width: 15%;
+    /* Kare genişliği */
+    height: 10%;
+    /* Kare yüksekliği */
     left: 90%;
     top: 45%;
 }
 
 .block5 {
-    background-color: rgba(255, 255, 0, 0); /* Sarı */
-    width: 15%;  /* Kare genişliği */
-    height: 8%; /* Kare yüksekliği */
+    background-color: rgba(255, 255, 0, 0);
+    /* Sarı */
+    width: 15%;
+    /* Kare genişliği */
+    height: 8%;
+    /* Kare yüksekliği */
     left: 5%;
     top: 55%;
 }
 
 .block6 {
-    background-color: rgba(128, 128, 128, 0); /* Gri */
-    width: 13%;  /* Kare genişliği */
-    height: 8%; /* Kare yüksekliği */
+    background-color: rgba(128, 128, 128, 0);
+    /* Gri */
+    width: 13%;
+    /* Kare genişliği */
+    height: 8%;
+    /* Kare yüksekliği */
     left: 23%;
     top: 55%;
 }
 
 .block7 {
-    background-color: rgba(255, 255, 255, 0); /* Beyaz */
-    width: 18%;  /* Kare genişliği */
-    height: 8%; /* Kare yüksekliği */
+    background-color: rgba(255, 255, 255, 0);
+    /* Beyaz */
+    width: 18%;
+    /* Kare genişliği */
+    height: 8%;
+    /* Kare yüksekliği */
     left: 42%;
     top: 55%;
 }
 
 .block8 {
-    background-color: rgba(173, 216, 230, 0); /* Açık Mavi */
-    width: 18%;  /* Kare genişliği */
-    height: 8%; /* Kare yüksekliği */
+    background-color: rgba(173, 216, 230, 0);
+    /* Açık Mavi */
+    width: 18%;
+    /* Kare genişliği */
+    height: 8%;
+    /* Kare yüksekliği */
     left: 65%;
     top: 55%;
 }
 
 .block9 {
-    background-color: rgba(128, 0, 128, 0); /* Mor */
-    width: 20%;  /* Kare genişliği */
-    height: 8%; /* Kare yüksekliği */
+    background-color: rgba(128, 0, 128, 0);
+    /* Mor */
+    width: 20%;
+    /* Kare genişliği */
+    height: 8%;
+    /* Kare yüksekliği */
     left: 88%;
     top: 55%;
 }
 
 .block-image {
-    width: 100%; /* Blok genişliğine göre ayarlama */
-    height: auto; /* Yüksekliği otomatik ayarlama */
-    max-height: 100%; /* Maksimum yükseklik sınırı */
-    object-fit: cover; /* Resmi blokta ortalama ve kırpmak için */
+    width: 100%;
+    /* Blok genişliğine göre ayarlama */
+    height: auto;
+    /* Yüksekliği otomatik ayarlama */
+    max-height: 100%;
+    /* Maksimum yükseklik sınırı */
+    object-fit: cover;
+    /* Resmi blokta ortalama ve kırpmak için */
 }
 
 .button-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* İki sütun */
-    gap: 5%; /* Butonlar arasındaki boşluk %5 */
-    width: 90%; /* Genişliği %90 yap */
-    max-width: 600px; /* Maksimum genişlik ayarlama (isteğe bağlı) */
+    grid-template-columns: repeat(2, 1fr);
+    /* İki sütun */
+    gap: 5%;
+    /* Butonlar arasındaki boşluk %5 */
+    width: 90%;
+    /* Genişliği %90 yap */
+    max-width: 600px;
+    /* Maksimum genişlik ayarlama (isteğe bağlı) */
 }
 
 /* Üst grid için margin */
 .button-grid:first-of-type {
-    margin-bottom: 5%; /* Alt kısıma olan mesafe %5 */
+    margin-bottom: 5%;
+    /* Alt kısıma olan mesafe %5 */
 }
 
 /* Alt grid için margin */
 .button-grid:last-of-type {
-    margin-top: 5%; /* Üst kısıma olan mesafe %5 */
+    margin-top: 5%;
+    /* Üst kısıma olan mesafe %5 */
 }
 
 .png-button {
@@ -128,22 +176,31 @@
 }
 
 .png-button img {
-    width: 70%; /* Butonların genişliğini %100 yap */
+    width: 70%;
+    /* Butonların genişliğini %100 yap */
     height: auto;
-    max-width: 120px; /* Maksimum genişlik ayarı */
+    max-width: 120px;
+    /* Maksimum genişlik ayarı */
     transition: transform 0.2s;
 }
 
 .png-button:hover img {
-    transform: scale(1.1); /* Hover sırasında büyütme efekti */
+    transform: scale(1.1);
+    /* Hover sırasında büyütme efekti */
 }
 
 .ruhum-links {
-    position: fixed;  /* Sayfanın altına sabitle */
-    bottom: 30px;  /* Ekranın altına yapıştır */
-    width: 100%;  /* Tüm genişliği kaplasın */
+    position: absolute;
+    /* Sayfanın altına sabitle */
+    bottom: 30px;
+    /* Ekranın altına yapıştır */
+    width: 100%;
+    /* Tüm genişliği kaplasın */
     display: flex;
-    justify-content: center;  /* Ortala */
-    padding: 10px 0;  /* Üst ve alt boşluk */
-    z-index: 1000;  /* Diğer içeriklerin üstünde görünmesi için z-index */
+    justify-content: center;
+    /* Ortala */
+    padding: 10px 0;
+    /* Üst ve alt boşluk */
+    z-index: 1000;
+    /* Diğer içeriklerin üstünde görünmesi için z-index */
 }

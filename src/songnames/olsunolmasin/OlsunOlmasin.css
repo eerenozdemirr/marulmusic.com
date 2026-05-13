@@ -4,8 +4,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
     position: relative;
@@ -20,8 +20,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -78,7 +78,7 @@ video {
     top: 30%; /* En üstten başlar */
     left: 10%;
     width: 40%; /* Sol yarı */
-    height: 40vh; /* Tam yükseklik */
+    height: 40%; /* Tam yükseklik */
     background-color: rgba(0, 0, 255, 0); /* Mavi opak */
     z-index: 5; /* Daha yüksek z-index */
     cursor: pointer; /* Tıklanabilir */
@@ -89,7 +89,7 @@ video {
     top: 30%; /* En üstten başlar */
     right: 10%;
     width: 40%; /* Sağ yarı */
-    height: 40vh; /* Tam yükseklik */
+    height: 40%; /* Tam yükseklik */
     background-color: rgba(255, 0, 0, 0); /* Kırmızı opak */
     z-index: 5; /* Daha yüksek z-index */
     cursor: pointer; /* Tıklanabilir */
@@ -111,8 +111,8 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 4; /* Video sırasında üstte olacak */
     display: flex;

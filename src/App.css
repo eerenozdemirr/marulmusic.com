@@ -1,11 +1,12 @@
 .App {
-  transition: background-image 1s ease; /* Arka plan değişiminde yumuşak geçiş */
-  height: 100vh;
-  overflow: hidden; /* Taşmayı engelle */
+  transition: background-image 1s ease;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
   position: relative;
-  background-size: cover; /* Arka plan boyutunu kaplamak için */
-  background-position: center; /* Arka planı merkezde konumlandır */
-  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/images/home/background.jpg');
 }
 
 .blur-background {
@@ -14,9 +15,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: inherit; /* Arka planı al */
-  filter: blur(5px); /* Arka planı bulanıklaştır */
-  z-index: 5; /* Arka plandan aşağıda olacak */
+  background: inherit;
+  /* Arka planı al */
+  filter: blur(5px);
+  /* Arka planı bulanıklaştır */
+  z-index: 5;
+  /* Arka plandan aşağıda olacak */
 }
 
 /* Yeni gelen buton için animasyon */
@@ -25,34 +29,49 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px; /* Butonun genişliği */
-  height: auto; /* Yükseklik otomatik olarak ayarlanır */
-  z-index: 10; /* Diğer öğelerin üstünde görünmesi için */
-  cursor: pointer; /* Tıklanabilir göster */
-  opacity: 0; /* Başlangıçta görünmez */
-  animation: fadeIn 1s forwards; /* Animasyonu burada ekliyoruz */
-  transition: opacity 0.5s ease; /* Opaklık geçişi */
+  width: 350px;
+  /* Butonun genişliği */
+  height: auto;
+  /* Yükseklik otomatik olarak ayarlanır */
+  z-index: 10;
+  /* Diğer öğelerin üstünde görünmesi için */
+  cursor: pointer;
+  /* Tıklanabilir göster */
+  opacity: 0;
+  /* Başlangıçta görünmez */
+  animation: fadeIn 1s forwards;
+  /* Animasyonu burada ekliyoruz */
+  transition: opacity 0.5s ease;
+  /* Opaklık geçişi */
 }
 
 /* Butonun fade in animasyonunu tanımlayın */
 @keyframes fadeIn {
   0% {
-      opacity: 0; /* Başlangıçta görünmez */
+    opacity: 0;
+    /* Başlangıçta görünmez */
   }
+
   100% {
-      opacity: 1; /* Tamamen görünür olur */
+    opacity: 1;
+    /* Tamamen görünür olur */
   }
 }
 
 /* Butonun animasyonunu tanımlayın */
 @keyframes dropIn {
   0% {
-      transform: translate(-50%, -100%); /* Yukarıdan başlama */
-      opacity: 0; /* Başlangıçta görünmez */
+    transform: translate(-50%, -100%);
+    /* Yukarıdan başlama */
+    opacity: 0;
+    /* Başlangıçta görünmez */
   }
+
   100% {
-      transform: translate(-50%, -50%); /* Merkezdeki konumuna yerleşir */
-      opacity: 1; /* Tamamen görünür olur */
+    transform: translate(-50%, -50%);
+    /* Merkezdeki konumuna yerleşir */
+    opacity: 1;
+    /* Tamamen görünür olur */
   }
 }
 
@@ -63,79 +82,109 @@
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px; /* Sandalye genişliği */
-  height: auto; /* Yüksekliği orantılı olarak ayarla */
-  animation: rotate 3s infinite; /* Küçük döngüsel hareket */
-  cursor: pointer; /* Tıklandığında fare imleci değişsin */
+  width: clamp(136px, min(38vw, 25svh), 190px);
+  /* Sandalye genişliği */
+  height: auto;
+  /* Yüksekliği orantılı olarak ayarla */
+  animation: rotate 3s infinite;
+  /* Küçük döngüsel hareket */
+  cursor: pointer;
+  /* Tıklandığında fare imleci değişsin */
 }
 
 /* Sandalye yukarı uçma animasyonu */
 .chair.fly {
-  animation: flyUp 1s forwards; /* Yukarı uçma animasyonu */
+  animation: flyUp 1s forwards;
+  /* Yukarı uçma animasyonu */
 }
 
 @keyframes flyUp {
   0% {
-    transform: translate(-50%, -50%); /* Başlangıç konumu */
-    opacity: 1; /* Başlangıçta görünür */
+    transform: translate(-50%, -50%);
+    /* Başlangıç konumu */
+    opacity: 1;
+    /* Başlangıçta görünür */
   }
+
   100% {
-    transform: translate(-50%, -280%); /* Ekranın tepesine doğru uç */
-    opacity: 1; /* Görünmez yapma, ekrandan çıkana kadar görünür */
+    transform: translate(-50%, -280%);
+    /* Ekranın tepesine doğru uç */
+    opacity: 1;
+    /* Görünmez yapma, ekrandan çıkana kadar görünür */
   }
 }
 
 /* Yeni arka plan için yukarıdan aşağıya kayma animasyonu */
 .new-background {
   position: absolute;
-  top: 0; /* Üstten başlayacak */
+  top: 0;
+  /* Üstten başlayacak */
   left: 0;
   right: 0;
-  height: 100vh;
-  background-image: url(new-background.jpg); /* Arka planı ayarlayın */
-  background-size: cover; /* Yeni arka plan boyutunu kaplamak için */
-  background-position: center; /* Yeni arka planı merkezde konumlandır */
-  animation: slideDown 1s forwards; /* Aşağıya kayma animasyonu uygula */
+  bottom: 0;
+  min-height: 100%;
+  height: 100%;
+  background-image: url('./assets/images/yuksek/new-background.jpg');
+  /* Arka planı ayarlayın */
+  background-size: cover;
+  /* Yeni arka plan boyutunu kaplamak için */
+  background-position: center;
+  /* Yeni arka planı merkezde konumlandır */
+  animation: slideDown 1s forwards;
+  /* Aşağıya kayma animasyonu uygula */
 }
 
 .new-background.slide-up {
-  animation: slideUp 1.5s forwards; /* Yukarı kayma animasyonu */
+  animation: slideUp 1.5s forwards;
+  /* Yukarı kayma animasyonu */
 }
 
 @keyframes slideUp {
   0% {
-    transform: translateY(0); /* Başlangıç konumu */
+    transform: translateY(0);
+    /* Başlangıç konumu */
   }
+
   100% {
-    transform: translateY(-100%); /* Ekranın dışına kayar */
+    transform: translateY(-100%);
+    /* Ekranın dışına kayar */
   }
 }
 
 @keyframes slideDown {
   0% {
-    transform: translateY(-100%); /* Başlangıçta yukarıda başlar */
+    transform: translateY(-100%);
+    /* Başlangıçta yukarıda başlar */
   }
+
   100% {
-    transform: translateY(0); /* Ekrana yerleşir */
+    transform: translateY(0);
+    /* Ekrana yerleşir */
   }
 }
 
 /* Styling for handwritten song images */
 .song-titles {
   position: absolute;
-  top: 48%; /* Centered vertically */
-  left: 50%; /* Centered horizontally */
+  top: 51%;
+  /* Centered vertically */
+  left: 50%;
+  /* Centered horizontally */
   margin-top: 2%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .handwritten-song {
-  width: 250px; /* Adjust size as needed */
+  width: clamp(162px, min(48vw, 24svh), 226px);
+  /* Adjust size as needed */
   height: auto;
-  margin: -28px 0; /* Negative margin to reduce spacing between images */
-  opacity: 0; /* Initially invisible */
-  animation: dropIn 0.5s forwards; /* Drop-in animation */
+  margin: clamp(-25px, -5vw, -15px) 0;
+  /* Negative margin to reduce spacing between images */
+  opacity: 0;
+  /* Initially invisible */
+  animation: dropIn 0.5s forwards;
+  /* Drop-in animation */
 }
 
 @keyframes dropIn {
@@ -143,97 +192,173 @@
     transform: translateY(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.back-button {
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  width: 50px; /* Butonun genişliği */
-  height: 50px; /* Butonun yüksekliği */
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.back-button:hover {
-  transform: scale(1.1); /* Üzerine gelindiğinde hafif büyütme efekti */
-}
-
 /* Şarkı isimlerinin kaybolma animasyonu */
 .handwritten-song.fade-out {
-  animation: fadeOut 0.5s forwards; /* Kaybolma animasyonu */
+  animation: fadeOut 0.5s forwards;
+  /* Kaybolma animasyonu */
 }
 
 @keyframes fadeOut {
   0% {
-    opacity: 1; /* Başlangıçta görünür */
+    opacity: 1;
+    /* Başlangıçta görünür */
   }
+
   100% {
-    opacity: 0; /* Tamamen görünmez olur */
+    opacity: 0;
+    /* Tamamen görünmez olur */
   }
 }
 
 /* Sandalyenin yukarıdan düşme animasyonu */
 .fall-down {
-  animation: fallDown 1s forwards; /* Düşme animasyonu */
+  animation: fallDown 1s forwards;
+  /* Düşme animasyonu */
 }
 
 @keyframes fallDown {
   0% {
-    transform: translate(-50%, -100%); /* Yukarıdan başla */
-    opacity: 0; /* Başlangıçta görünmez */
+    transform: translate(-50%, -100%);
+    /* Yukarıdan başla */
+    opacity: 0;
+    /* Başlangıçta görünmez */
   }
+
   100% {
-    transform: translate(-50%, -50%); /* Eski konumuna yerleş */
-    opacity: 1; /* Tamamen görünür olur */
+    transform: translate(-50%, -50%);
+    /* Eski konumuna yerleş */
+    opacity: 1;
+    /* Tamamen görünür olur */
   }
 }
 
 /* Sandalye döngüsel hareket */
 @keyframes rotate {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  25% { transform: translate(-50%, -50%) rotate(8deg); }
-  50% { transform: translate(-50%, -50%) rotate(-4deg); }
-  75% { transform: translate(-50%, -50%) rotate(4deg); }
-  100% { transform: translate(-50%, -50%) rotate(0deg); }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
+  75% {
+    transform: translate(-50%, -50%) rotate(4deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 }
 
 .side-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px; /* Buton genişliği, ihtiyaca göre ayarlanabilir */
-  height: auto; /* Yükseklik otomatik olarak ayarlanır */
+  width: clamp(42px, 10vw, 58px);
+  /* Buton genişliği, ihtiyaca göre ayarlanabilir */
+  height: auto;
+  /* Yükseklik otomatik olarak ayarlanır */
   cursor: pointer;
-  z-index: 10; /* Diğer öğelerin üstünde görüntülemek için */
+  z-index: 10;
+  /* Diğer öğelerin üstünde görüntülemek için */
 }
 
 .left-button {
-  left: 20px; /* Sol buton için konum */
+  left: 20px;
+  /* Sol buton için konum */
 }
 
 .right-button {
-  right: 20px; /* Sağ buton için konum */
+  right: 20px;
+  /* Sağ buton için konum */
 }
 
 /* Arka planı bulanıklaştırma */
 .blur-background {
-  filter: blur(5px); /* Arka planı bulanıklaştır */
-  transition: filter 1s ease; /* Geçiş efekti */
+  filter: blur(5px);
+  /* Arka planı bulanıklaştır */
+  transition: filter 1s ease;
+  /* Geçiş efekti */
 }
 
 /* Yeni gelen görseli ortalamak için stil */
 /* Yeni gelen görseli ortalamak için stil */
 .credit {
-  width: 420px; /* Görüntü genişliği, ihtiyaca göre ayarlanabilir */
+  width: min(420px, calc(100% - 44px));
+  /* Görüntü genişliği, ihtiyaca göre ayarlanabilir */
   height: auto;
   position: absolute;
-  top: 50%; /* Dikeyde ortala */
-  left: 50%; /* Yatayda ortala */
-  transform: translate(-50%, -50%); /* Tam ortalama için */
-  z-index: 10; /* Üstte görünsün */
+  top: 50%;
+  /* Dikeyde ortala */
+  left: 50%;
+  /* Yatayda ortala */
+  transform: translate(-50%, -50%);
+  /* Tam ortalama için */
+  z-index: 10;
+  /* Üstte görünsün */
+}
+
+@media (max-width: 720px) {
+  .song-titles {
+    top: 52%;
+    width: min(94vw, 390px);
+  }
+
+  .handwritten-song {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left-button {
+    left: 12px;
+  }
+
+  .right-button {
+    right: 12px;
+  }
+}
+
+@media (min-width: 820px) {
+  .chair {
+    width: min(176px, 43%);
+  }
+
+  .song-titles {
+    top: 51%;
+    width: 100%;
+  }
+
+  .handwritten-song {
+    width: min(226px, 58%);
+    margin: -24px auto;
+  }
+
+  .left-button {
+    left: 16px;
+  }
+
+  .right-button {
+    right: 16px;
+  }
+}
+
+@media (min-width: 820px) and (max-height: 760px) {
+  .handwritten-song {
+    width: min(206px, 56%);
+    margin-top: -22px;
+    margin-bottom: -22px;
+  }
 }

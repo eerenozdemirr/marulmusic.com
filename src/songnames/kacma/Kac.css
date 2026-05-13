@@ -2,19 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .start-button {
-  width: 35%; /* Butonun genişliği ekran genişliğinin yüzdesi olarak ayarlandı */
-  height: auto; /* Oranını korumak için otomatik yükseklik */
+  width: 35%;
+  /* Butonun genişliği ekran genişliğinin yüzdesi olarak ayarlandı */
+  height: auto;
+  /* Oranını korumak için otomatik yükseklik */
   cursor: pointer;
   display: block;
   margin: auto;
 }
 
 .restart-button {
-  width: 35%; /* Tekrar oyna butonu için genişlik */
+  width: 35%;
+  /* Tekrar oyna butonu için genişlik */
   height: auto;
   cursor: pointer;
   display: block;
@@ -24,52 +27,62 @@
 .game-area {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-image: url('/Users/erenozdemir/album-promotion/src/songnames/kacma/kac-background.png'); 
+  height: 100%;
+  background-image: url('./kac-background.png');
   background-size: cover;
   background-position: center;
 }
 
 .dino {
   position: absolute;
-  bottom: 25%; /* Ekranın altından yüzdeye göre yukarı taşıma */
-  left: 25%; /* Konumu sola göre yüzde ile ayarlanmış */
-  width: 20%; /* Dino boyutu ekran genişliğinin yüzde 10'u olarak ayarlanmış */
-  height: auto; /* Otomatik oran */
+  bottom: 25%;
+  /* Ekranın altından yüzdeye göre yukarı taşıma */
+  left: 25%;
+  /* Konumu sola göre yüzde ile ayarlanmış */
+  width: 20%;
+  /* Dino boyutu ekran genişliğinin yüzde 10'u olarak ayarlanmış */
+  height: auto;
+  /* Otomatik oran */
 }
 
 .dino-image {
-  width: 100%; 
-  height: auto; /* Yükseklik oranını koruyoruz */
+  width: 100%;
+  height: auto;
+  /* Yükseklik oranını koruyoruz */
 }
 
 .left-image {
   position: absolute;
-  bottom: 25%; /* Ekranın altından yüzdeye göre yukarı taşıma */
-  left: 0%; /* Sol konumu yüzdelik olarak */
-  width: 25%; /* Görsel genişliği */
-  height: auto; 
+  bottom: 25%;
+  /* Ekranın altından yüzdeye göre yukarı taşıma */
+  left: 0%;
+  /* Sol konumu yüzdelik olarak */
+  width: 25%;
+  /* Görsel genişliği */
+  height: auto;
 }
 
 .left-image-content {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
 .dino.jump {
-  bottom: 35%; /* Zıplama sırasında dinozorun hareket yüksekliği */
+  bottom: 35%;
+  /* Zıplama sırasında dinozorun hareket yüksekliği */
 }
 
 .obstacle {
   position: absolute;
   bottom: 24%;
-  width: 10%; /* Engel genişliği ekran genişliğinin yüzde 4'ü */
-  height: auto; 
+  width: 10%;
+  /* Engel genişliği ekran genişliğinin yüzde 4'ü */
+  height: auto;
   transition: left 0.1s linear;
 }
 
 .obstacle-image {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -77,7 +90,8 @@
   position: absolute;
   top: 2%;
   left: 2%;
-  font-size: 6vw; /* Ekran genişliğine göre font boyutu */
+  font-size: clamp(22px, 7%, 34px);
+  /* Ekran genişliğine göre font boyutu */
 }
 
 .game-over {
@@ -85,7 +99,8 @@
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
-  font-size: 6vw; /* Yazı boyutu ekran genişliğine göre */
+  font-size: clamp(22px, 7%, 34px);
+  /* Yazı boyutu ekran genişliğine göre */
   color: white;
 }
 
@@ -94,7 +109,8 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw; /* Buton yazı boyutu yüzde ile */
+  font-size: 16px;
+  /* Buton yazı boyutu yüzde ile */
 }
 
 
@@ -104,24 +120,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .game-over-image {
-  width: 300px; /* Görselin genişliği */
-  height: auto; /* Görselin orantılı olarak boyutlanması */
-  margin-bottom: 20px; /* Skor ile görsel arasındaki boşluk */
+  width: 300px;
+  /* Görselin genişliği */
+  height: auto;
+  /* Görselin orantılı olarak boyutlanması */
+  margin-bottom: 20px;
+  /* Skor ile görsel arasındaki boşluk */
 }
 
 
 
 .nick-input-container {
   position: absolute;
-  top: 5%; /* Yukarıdan %5 boşluk bırak */
+  top: 5%;
+  /* Yukarıdan %5 boşluk bırak */
   left: 50%;
   transform: translateX(-50%);
-  text-align: center; /* Ortalansın */
-  z-index: 10; /* Diğer elemanların üstünde gözükmesi için */
+  text-align: center;
+  /* Ortalansın */
+  z-index: 10;
+  /* Diğer elemanların üstünde gözükmesi için */
 }
 
 .nick-input-container input {

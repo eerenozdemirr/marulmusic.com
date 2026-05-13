@@ -3,8 +3,8 @@
     background-size: cover; /* Arka planı kaplayacak şekilde ayarlama */
     background-repeat: no-repeat; /* Arka planın tekrar etmesini engelle */
     background-position: center; /* Arka planı merkezde konumlandır */
-    height: 100vh; /* Tam ekran yüksekliği */
-    width: 100vw; /* Tam ekran genişliği */
+    height: 100%; /* Tam ekran yüksekliği */
+    width: 100%; /* Tam ekran genişliği */
     position: relative; /* İçindeki öğeleri konumlandırmak için gerekli */
     transition: background-image 0.5s ease; /* Arka plan geçişi için animasyon */
 }
@@ -22,7 +22,7 @@
 
 
 .music-links {
-    position: fixed;  /* Sayfanın altına sabitle */
+    position: absolute;  /* Sayfanın altına sabitle */
     top: 20px;
     width: 100%;  /* Tüm genişliği kaplasın */
     display: flex;
